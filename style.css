@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+  color: #222;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1f6feb, #0b2347);
+  color: white;
+  padding: 45px 25px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 2.4rem;
+}
+
+.hero p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 25px auto;
+  padding: 0 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.tab-button {
+  border: none;
+  background: #d9e2f3;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab-button.active {
+  background: #1f6feb;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.simulation-layout {
+  display: grid;
+  grid-template-columns: minmax(420px, 2fr) minmax(260px, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+canvas {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #cfd7e6;
+  border-radius: 10px;
+}
+
+.controls {
+  background: #f6f8fb;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.controls label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.controls input {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.controls span {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 2px;
+  color: #333;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background: #1f6feb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #174ea6;
+}
+
+.download a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.info {
+  background: #eef3ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #555;
+}
+
+@media (max-width: 850px) {
+  .simulation-layout {
+    grid-template-columns: 1fr;
+  }
+}
